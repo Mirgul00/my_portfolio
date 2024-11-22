@@ -1,0 +1,68 @@
+/* Секция "Мои проекты" */
+.projects {
+    padding: 4rem 1rem; /* Пространство сверху и снизу */
+    background: #f9f9f9; /* Светлый фон */
+    color: #333; /* Основной цвет текста */
+    text-align: center; /* Центрирование заголовка */
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem; /* Размер заголовка */
+    color: #22442E; /* Акцентный цвет */
+    margin-bottom: 2rem; /* Отступ под заголовком */
+    text-transform: uppercase; /* Заглавные буквы */
+    letter-spacing: 2px; /* Межбуквенный интервал */
+  }
+  
+  /* Сетка для карточек проектов */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
+    gap: 2rem; /* Расстояние между карточками */
+    max-width: 1200px; /* Максимальная ширина секции */
+    margin: 0 auto; /* Центрирование сетки */
+    padding: 0 1rem; /* Отступы по бокам */
+  }
+  
+  /* Карточка проекта */
+  .project-card {
+    background: #fff; /* Белый фон карточки */
+    border: 1px solid #ddd; /* Светлая рамка */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    overflow: hidden; /* Обрезка содержимого */
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Поднятие карточки */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Усиление тени */
+  }
+  
+  /* Изображение проекта */
+  .project-card img {
+    width: 100%; /* Полная ширина */
+    height: auto; /* Автоматическая высота */
+    display: block; /* Убирает лишние отступы */
+    border-bottom: 1px solid #ddd; /* Разделение изображения и текста */
+  }
+  
+  /* Заголовок и описание проекта */
+  .project-card h3 {
+    font-size: 1.5rem; /* Размер заголовка карточки */
+    margin: 1rem 0 0.5rem; /* Отступы сверху и снизу */
+    color: #22442E; /* Цвет заголовка */
+  }
+  
+  .project-card p {
+    font-size: 1rem; /* Размер текста описания */
+    color: #555; /* Вторичный цвет текста */
+    margin: 0 1rem 1rem; /* Отступы для текста */
+    line-height: 1.6; /* Увеличение межстрочного интервала */
+  }
+  .project-card {
+    text-decoration: none; /* Убирает подчёркивание текста */
+    color: inherit; /* Наследует цвет текста */
+}
+
+  

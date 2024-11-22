@@ -1,0 +1,38 @@
+/* Общие стили для секции "Обо мне" */
+.about {
+    padding: 4rem 1rem; /* Пространство сверху и снизу */
+    background: #f4f4f4; /* Светлый фон */
+    color: #333; /* Темный текст */
+    text-align: center; /* Центрирование текста */
+  }
+  
+  .about h2 {
+    font-size: 2.5rem; /* Увеличенный размер заголовка */
+    color: #22442E; /* Цвет заголовка */
+    margin-bottom: 1.5rem; /* Отступ от заголовка до текста */
+    text-transform: uppercase; /* Заглавные буквы */
+    letter-spacing: 2px; /* Увеличение межбуквенного интервала */
+  }
+  
+  .about p {
+    max-width: 800px; /* Максимальная ширина текста */
+    margin: 0 auto; /* Центрирование текста */
+    line-height: 1.8; /* Увеличение межстрочного интервала */
+    font-size: 1.2rem; /* Увеличенный размер шрифта */
+    color: #555; /* Более мягкий оттенок текста */
+  }
+  
+  /* Анимация появления */
+  .about p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

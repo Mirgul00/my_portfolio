@@ -1,0 +1,65 @@
+/* Стили для секции "Главная" */
+.home {
+  display: flex;
+  justify-content: space-between; /* Разделение элементов по сторонам */
+  align-items: center;
+  height: 100vh; /* Занимает всю высоту экрана */
+  background: linear-gradient(to bottom, #333d36, #333d36); /* Градиентный фон */
+  color: #fff; /* Белый текст */
+  padding: 0 5%; /* Отступы по бокам */
+}
+
+/* Стили для текста */
+.home h1 {
+  font-size: 3.5rem; /* Увеличенный размер шрифта */
+  margin-bottom: 1rem; /* Отступ под заголовком */
+  text-transform: uppercase; /* Заглавные буквы */
+  letter-spacing: 2px; /* Увеличение межбуквенного интервала */
+  animation: fadeIn 1s ease-in-out; /* Анимация появления */
+}
+
+.home p {
+  font-size: 1.5rem; /* Увеличенный размер шрифта для описания */
+  font-weight: 300; /* Легкий шрифт */
+  letter-spacing: 1.5px; /* Увеличение межбуквенного интервала */
+  margin-top: 0.5rem; /* Отступ сверху */
+  animation: fadeIn 1.5s ease-in-out; /* Анимация появления */
+}
+
+.home .text-container {
+  flex: 1; /* Занимает половину пространства секции */
+  max-width: 50%; /* Максимальная ширина */
+}
+
+/* Стили для фото */
+.myphoto {
+  flex: 1; /* Занимает половину пространства секции */
+  display: flex;
+  justify-content: center; /* Центрирование фото */
+}
+
+.myphoto img {
+  width: 500px; /* Ширина изображения */
+  height: 600px; /* Высота изображения */
+  /* border-radius: 50%; Закругление делает фото круглым */
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для объёмности */
+  transition: transform 0.3s, box-shadow 0.3s; /* Эффект при наведении */
+}
+
+.myphoto img:hover {
+  transform: scale(1.1); /* Увеличение при наведении */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Усиление тени */
+}
+
+/* Анимация появления текста */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

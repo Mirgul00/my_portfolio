@@ -1,0 +1,40 @@
+/* Общие стили для Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333; /* Темный фон */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 30px; /* Расстояние между пунктами */
+  }
+  
+  .navbar a {
+    color: #f4f4f4; /* Светлый текст */
+    font-size: 1.2rem; /* Увеличенный размер шрифта */
+    font-weight: 600; /* Полужирный текст */
+    text-transform: uppercase; /* Верхний регистр текста */
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: #22442E; /* Цвет при наведении */
+    transform: scale(1.1); /* Легкое увеличение при наведении */
+  }
+  
+  .navbar a:active {
+    color: #FF5722; /* Цвет для активной ссылки */
+  }
+  
+  /* Добавляем отступ для всего контента, чтобы учесть фиксированный Header */
+  body {
+    padding-top: 80px;
+  }
+  
